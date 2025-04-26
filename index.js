@@ -1,5 +1,4 @@
 // server.js
-require("dotenv").config();
 const express = require("express");
 const { AzureOpenAI } = require("openai");
 const { removeBackground } = require("@imgly/background-removal-node");
@@ -7,8 +6,8 @@ const { removeBackground } = require("@imgly/background-removal-node");
 const app = express();
 const port = process.env.PORT || 3000;
 
-const endpoint = `${process.env.API_URL}?api-version=${process.env.API_VER}`;
-const apiKey = process.env.API_KEY;
+const endpoint = `https://zd41-m9xtwvd7-swedencentral.openai.azure.com/openai/deployments/dall-e-3/images/generations??api-version=2024-02-01`;
+const apiKey = '7CroRWgsj6x08zKltQiJInOmowA65gX77WXvuzykXJODgPCCS0WbJQQJ99BDACfhMk5XJ3w3AAAAACOGlzYX';
 const apiVersion = process.env.OPENAI_API_VERSION || "2024-02-01";
 const deploymentName = process.env.AZURE_OPENAI_DEPLOYMENT_NAME || "dall-e-3";
 
