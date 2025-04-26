@@ -1,9 +1,29 @@
 {
+  "name": "opener3",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/NicholasEric/merger-server#readme",
+  "bugs": {
+    "url": "https://github.com/NicholasEric/merger-server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicholasEric/merger-server.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
   "dependencies": {
     "@azure/identity": "^4.9.1",
     "@imgly/background-removal-node": "^1.4.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "openai": "^4.96.0"
-  }
+  },
+  "devDependencies": {}
 }
